@@ -12,3 +12,10 @@ function infoPeixes(nome, preco, quantidade){
         quantidade: quantidade
     }); 
 }
+
+function exibirPeixes() {
+  console.log("Nome do peixe | Preco | Quantidade");
+  console.log("----------------------------------");
+    peixes.forEach(function(peixe) {
+    
+    });
