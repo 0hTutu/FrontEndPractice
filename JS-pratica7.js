@@ -26,3 +26,20 @@ class Aluno {
 
 let alunos = [];
 
+for (let i = 0; i < 50; i++) {
+  let nome = "Aluno " + (i + 1);
+  let turma = turmas[Math.floor(Math.random() * turmas.length)];
+  let idade = idades[Math.floor(Math.random() * idades.length)];
+  let esporte = esportes[Math.floor(Math.random() * esportes.length)];
+  alunos.push(new Aluno(nome, turma, idade, esporte));
+}
+
+let alunosPorTurma = {};
+turmas.forEach(function(turma) {
+  alunosPorTurma[turma] = [];
+  alunos.forEach(function(aluno) {
+    if (aluno.turma === turma) {
+      alunosPorTurma[turma].push(aluno);
+    }
+  });
+});
