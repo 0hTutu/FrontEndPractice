@@ -63,3 +63,10 @@ esportes.forEach(function(esporte) {
     }
   });
 });
+
+console.log("Alunos por turma:");
+console.log(alunosPorTurma);
+console.log("Alunos por idade:");
+console.log(alunosPorIdade);
+console.log("Alunos por esporte:");
+console.log(alunosPorEsporte);
