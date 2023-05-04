@@ -23,3 +23,6 @@ class Aluno {
     this.esporte = esporte;
   }
 }
+
+let alunos = [];
+
