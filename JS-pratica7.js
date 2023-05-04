@@ -11,9 +11,15 @@ as turmas são 101, 102, 103, 104 e 105 | as idades estão entre 16 a 18 anos | 
 // Exibir os alunos por turma, idade e esporte
 */
 
-const turmas = [101, 102, 103, 104, 105];
+const turmas = ["101", "102", "103", "104", "105"];
 const idades = [16, 17, 18];
 const esportes = ["vôlei", "basquete", "futebol"];
 
-//Não sei definir classes
-
+class Aluno {
+  constructor(nome, turma, idade, esporte) {
+    this.nome = nome;
+    this.turma = turma;
+    this.idade = idade;
+    this.esporte = esporte;
+  }
+}
