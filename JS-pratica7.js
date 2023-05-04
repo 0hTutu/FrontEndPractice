@@ -43,3 +43,23 @@ turmas.forEach(function(turma) {
     }
   });
 });
+
+let alunosPorIdade = {};
+idades.forEach(function(idade) {
+  alunosPorIdade[idade] = [];
+  alunos.forEach(function(aluno) {
+    if (aluno.idade === idade) {
+      alunosPorIdade[idade].push(aluno);
+    }
+  });
+});
+
+let alunosPorEsporte = {};
+esportes.forEach(function(esporte) {
+  alunosPorEsporte[esporte] = [];
+  alunos.forEach(function(aluno) {
+    if (aluno.esporte === esporte) {
+      alunosPorEsporte[esporte].push(aluno);
+    }
+  });
+});
