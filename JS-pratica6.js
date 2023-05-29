@@ -20,7 +20,7 @@ function infoPeixes(nome, preco, quantidade){
     }); 
 }  
 
-//a função addPeixes serve pra adcionar peixes a tabela
+//a função addPeixes serve pra adicionar peixes a tabela
 function addPeixes(){
     alert("adcionar novas informações sobre um peixe:");
     
